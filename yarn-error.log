@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\shaowei\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\oracle\ora90\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\appcoder\Java\jdk1.7.0_17\bin;D:\appcoder\Java\jdk1.7.0_17\jre\bin;D:\appcoder\apache-maven-3.5.2\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\nodejs;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\appcoder\Python36;D:\appcoder\works\;D:\appcoder\mysql-5.7.20-winx64\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Mercurial\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\nodejs\;C:\Users\shaowei\.cargo\bin;D:\appcoder\Python36\Scripts\;D:\appcoder\Python36\;C:\Users\shaowei\AppData\Local\Microsoft\WindowsApps;D:\appcoder\Microsoft VS Code\bin;D:\apphome\Fiddler;C:\Users\shaowei\AppData\Local\Microsoft\WindowsApps;C:\Users\shaowei\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\shaowei\AppData\Roaming\Composer\vendor\bin;C:\Users\shaowei\AppData\Roaming\npm;D:\appcoder\cmake-3.19.0-rc2-win64-x64\bin;C:\Users\shaowei\.dotnet\tools
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.0.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@typescript-eslint%2feslint-plugin: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND 7890
+      at ClientRequest.onError (C:\Users\shaowei\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:152235:17)
+      at Object.onceWrapper (node:events:434:26)
+      at ClientRequest.emit (node:events:327:20)
+      at Socket.socketErrorListener (node:_http_client:478:9)
+      at Socket.emit (node:events:327:20)
+      at emitErrorNT (node:internal/streams/destroy:194:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:159:3)
+      at processTicksAndRejections (node:internal/process/task_queues:80:21)
+
+npm manifest: 
+  {
+    "name": "ts-react-frame",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": {
+      "name": "Martin Shaw",
+      "url": "https://github/Martin-Shao",
+      "email": "shaogucheng@hotmail.com"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Martin-Shao/ts-react-frame"
+    },
+    "license": "MIT",
+    "scripts": {},
+    "devDependencies": {
+      "@typescript-eslint/eslint-plugin": "^4.7.0",
+      "@typescript-eslint/parser": "^4.7.0",
+      "eslint": "^7.13.0",
+      "eslint-config-airbnb": "^18.2.1",
+      "eslint-plugin-import": "^2.22.1",
+      "eslint-plugin-jsx-a11y": "^6.4.1",
+      "eslint-plugin-react": "^7.21.5",
+      "eslint-plugin-react-hooks": "^4.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
