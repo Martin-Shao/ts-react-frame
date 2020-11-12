@@ -263,4 +263,27 @@ yarn add prettier -D
 }
 ```
 
+### linters 和 prettier 冲突解决
+
+### lint-stage
+
+```bash
+yarn add husky lint-staged -D
+```
+
+### commitlint
+
+
+
 ## 第三方库集成和优化
+
+### 实现基本的打包功能
+
+#### 配置入口文件
+
+``` bash
+# 本地安装开发依赖 typescript
+yarn add typescript -D
+
+
+```
