@@ -1,0 +1,16 @@
+{
+  "name": "ts-react-frame",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Martin Shaw",
+    "url": "https://github/Martin-Shao",
+    "email": "shaogucheng@hotmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Martin-Shao/ts-react-frame"
+  },
+  "license": "MIT",
+  "scripts": {}
+}
