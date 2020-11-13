@@ -301,6 +301,7 @@ cd ./scripts && npx tsc --init && cd ..
 
 ``` bash
 yarn add babel-loader @babel/core @babel/preset-typescript -D
+yarn add @babel/preset-env -D
 ```
 
 #### webpack 配置和安装
@@ -311,4 +312,39 @@ yarn add webpack webpack-merge @types/webpack @types/webpack-merge -D
 
 # webpack5
 yarn add webpack-cli webpack webpack-merge -D
+```
+
+#### express 开发 devServe
+
+``` bash
+yarn add webpack-dev-middleware webpack-hot-middleware @types/webpack-dev-middleware @types/webpack-hot-middleware -D
+yarn add express  @types/express -D
+```
+
+启动脚本需要的工具库
+
+> * cors -> 解决跨越问题
+> * open -> Open stuff like URLs, files, executables. Cross-platform.
+> * yargs -> Yargs be a node.js library fer hearties tryin' ter parse optstrings
+> * chalk -> Terminal string styling done right
+> * get-port -> Get an available TCP port
+> * log-symbols -> Colored symbols for various log levels
+> * connect-history-api-fallback -> Middleware to proxy requests through a specified index page, useful for Single Page Applications that utilise the HTML5 History API.
+
+``` bash
+yarn add @types/cors -D
+yarn add @types/yargs -D
+yarn add @types/connect-history-api-fallback -D
+
+yarn add cors open yargs chalk get-port log-symbols connect-history-api-fallback -D
+
+yarn add http-proxy-middleware -D
+yarn add webpack-open-browser -D
+yarn add fork-ts-checker-webpack-plugin -D
+```
+
+#### 启动服务
+
+``` bash
+yarn add ts-node cross-env -D
 ```
