@@ -285,5 +285,30 @@ yarn add husky lint-staged -D
 # 本地安装开发依赖 typescript
 yarn add typescript -D
 
+# src ts单独配置
+cd src && npx tsc --init && cd ..
 
+# scripts ts单独配置
+cd ./scripts && npx tsc --init && cd ..
+```
+
+#### 编译 TypeScript
+
+三种方案我们选择第一种
+1. babel + @babel/preset-typescript
+2. ts-loader
+3. awesome-typescript-loader
+
+``` bash
+yarn add babel-loader @babel/core @babel/preset-typescript -D
+```
+
+#### webpack 配置和安装
+
+``` bash
+# history webpack4
+yarn add webpack webpack-merge @types/webpack @types/webpack-merge -D
+
+# webpack5
+yarn add webpack-cli webpack webpack-merge -D
 ```

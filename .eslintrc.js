@@ -19,7 +19,9 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint'],
-  rules: {},
+  rules: {
+    'linebreak-style': false,
+  },
   settings: {
     'import/resolver': {
       node: {
