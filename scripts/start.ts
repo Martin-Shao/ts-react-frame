@@ -12,6 +12,7 @@ import { HOST, DEFAULT_PORT, ENABLE_OPEN } from './helpers/constants'
 
 
 async function start() {
+  console.info(chalk.bgBlue('start...'))
   const PORT = await getPort({ port: [DEFAULT_PORT, 4000, 8080, 8888] })
   const address = `http://${HOST}:${PORT}`
 
@@ -41,8 +42,8 @@ async function start() {
     process.on(signal, () => {
       httpServer.close()
       console.info(chalk.greenBright.bold(`\n${Math.random() > 0.5 ? 'See you again' : 'Goodbye'}!`))
+      process.exit()
     })
-    process.exit()
   });
 }
 

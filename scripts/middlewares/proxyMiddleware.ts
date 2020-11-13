@@ -9,6 +9,8 @@ function link(str: string): string {
 }
 
 export default function proxyMiddleware(server: Express) {
+  console.info(chalk.magenta.underline('proxyMiddleware...start...'))
+  console.info(JSON.stringify(proxyTable))
   Object.entries(proxyTable).forEach(([path, options]) => {
     const from = path;
     const to = options.target as string

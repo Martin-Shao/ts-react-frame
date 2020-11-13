@@ -1,15 +1,16 @@
+import { resolve } from 'path'
 import { Configuration } from 'webpack'
 
-import { projectRoot, projectName, resolvePath } from './env'
-
+import { __DEV__, PROJECT_ROOT, PROJECT_NAME } from '../helpers/constants'
+console.info(PROJECT_ROOT)
 const commonConfig: Configuration = {
-  context: projectRoot,
-  entry: resolvePath(projectRoot, './src/index.tsx'),
+  context: PROJECT_ROOT,
+  entry: resolve(PROJECT_ROOT, './src/index.js'),
   output: {
     publicPath: '/',
-    path: resolvePath(projectRoot, './dist'),
+    path: resolve(PROJECT_ROOT, './dist'),
     filename: 'js/[name]-[hash].bundle.js',
-    hashSalt: projectName || 'ts react frame'
+    hashSalt: PROJECT_NAME || 'ts react frame'
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],

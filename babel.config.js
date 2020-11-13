@@ -10,7 +10,7 @@ const envPreset = [
   },
 ];
 
-export default function (api) {
+module.exports = function (api) {
   api.cache(true);
 
   const presets = ['@babel/preset-typescript'];
